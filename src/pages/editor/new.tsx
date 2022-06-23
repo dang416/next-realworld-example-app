@@ -2,11 +2,11 @@ import Router from "next/router";
 import React from "react";
 import useSWR from "swr";
 
-import ListErrors from "../../components/common/ListErrors";
-import TagInput from "../../components/editor/TagInput";
-import ArticleAPI from "../../lib/api/article";
-import storage from "../../lib/utils/storage";
-import editorReducer from "../../lib/utils/editorReducer";
+import ListErrors from "@/components/common/ListErrors";
+import TagInput from "@/components/editor/TagInput";
+import ArticleAPI from "@/lib/api/article";
+import storage from "@/lib/utils/storage";
+import editorReducer from "@/lib/utils/editorReducer";
 
 const PublishArticleEditor = () => {
   const initialState = {

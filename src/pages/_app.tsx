@@ -1,8 +1,8 @@
 import Head from "next/head";
 import React from "react";
 
-import Layout from "components/common/Layout";
-import ContextProvider from "lib/context";
+import Layout from "@/components/common/Layout";
+import ContextProvider from "@/lib/context";
 import "styles.css";
 
 if (typeof window !== "undefined") {

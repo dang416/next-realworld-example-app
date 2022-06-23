@@ -2,18 +2,18 @@ import { useRouter } from "next/router";
 import React from "react";
 import useSWR, { mutate, trigger } from "swr";
 
-import ArticleList from "../../components/article/ArticleList";
-import CustomImage from "../../components/common/CustomImage";
-import ErrorMessage from "../../components/common/ErrorMessage";
-import Maybe from "../../components/common/Maybe";
-import EditProfileButton from "../../components/profile/EditProfileButton";
-import FollowUserButton from "../../components/profile/FollowUserButton";
-import ProfileTab from "../../components/profile/ProfileTab";
-import UserAPI from "../../lib/api/user";
-import checkLogin from "../../lib/utils/checkLogin";
-import { SERVER_BASE_URL } from "../../lib/utils/constant";
-import fetcher from "../../lib/utils/fetcher";
-import storage from "../../lib/utils/storage";
+import ArticleList from "@/components/article/ArticleList";
+import CustomImage from "@/components/common/CustomImage";
+import ErrorMessage from "@/components/common/ErrorMessage";
+import Maybe from "@/components/common/Maybe";
+import EditProfileButton from "@/components/profile/EditProfileButton";
+import FollowUserButton from "@/components/profile/FollowUserButton";
+import ProfileTab from "@/components/profile/ProfileTab";
+import UserAPI from "@/lib/api/user";
+import checkLogin from "@/lib/utils/checkLogin";
+import { SERVER_BASE_URL } from "@/lib/utils/constant";
+import fetcher from "@/lib/utils/fetcher";
+import storage from "@/lib/utils/storage";
 
 const Profile = ({ initialProfile }) => {
   const router = useRouter();
